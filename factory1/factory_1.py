@@ -1,5 +1,8 @@
 from abc import ABCMeta, abstractmethod
 
+# We use staticmethod together with abstractmethod so that pylint can check the implementation with our interface if it is correct. This is before runtime.
+# In our Interface, we usually use methods only
+# All our variables will be placed in the Concrete Creator and make it private
 
 class IBurger(metaclass=ABCMeta):
     """Burger Product Interface"""
